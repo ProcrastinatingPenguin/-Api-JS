@@ -40,10 +40,10 @@ GitHub's fenced code blocks are also supported with **Highlight.js** syntax high
     <h1> Demo A. </h1>
     <div id="Container"></div>
     <script>
-        //Get JSON Function - Part of my API JS Library
-                //URL                             //Function To Be Called With Response
-        getJSON('http://api.reddit.com/r/aww/top', success);
+        //Get JSON Function - Part of my API JS Library - Gets the JSON Data from the Reddit Api with the Current Top Posts In /r/aww.
 
+        getJSON('http://api.reddit.com/r/aww/top', success);
+                //URL                             //Function To Be Called With Response
         function success(data) {
             console.log("hi");
             redditLinks = data;
