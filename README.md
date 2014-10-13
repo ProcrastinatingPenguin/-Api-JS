@@ -6,7 +6,7 @@ Hey! I'm Josh. This is the github repo for my latest project **api-js**. **Api-j
 
 I designed **api-js** to save people time, and allow all developers to access the fantastic json apis out there. I first started building **api-js** for my own use whilst building a Reddit web application.
 
-Documentation
+What is it? How does it work?
 -------------
 
 StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
