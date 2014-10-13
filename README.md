@@ -17,7 +17,19 @@ What is it? How does it work?
 > - Not All Planned Functions Have Been Implemented Yet. Please Check Here Lately for New Updates
 > - Currently Only Supports JSON apis.
 
-#### <i class="icon-file"></i> Create a document
+#### <i class="icon-file"></i> How To Add it To Your Code?
+
+```
+// Its Easy! Set Up a Normal HTML Document.
+<html>
+  <head>
+    // And Add:
+    <script src = "api.js"></script>
+    // Inside Your Header
+  </head>
+  <body>
+    ...
+```
 
 The document panel is accessible using the <i class="icon-folder-open"></i> button in the navigation bar. You can create a new document by clicking <i class="icon-file"></i> **New document** in the document panel.
 
