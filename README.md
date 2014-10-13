@@ -39,7 +39,16 @@ What is it? How does it work?
     ...
 ```
 
-### A Basic Demo
+### A Extremely Basic Demo
+
+What Really Shows How Useful **api.js** can be is this demo:
+  Using a question on stackoverflow (http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript) asking for help using the github api the simple solution required 8 lines of code, mine required 2 and produces perfectly readable code.
+```
+ getJSON('https://api.github.com/users/funchal', function myfunction(data) {
+            console.log(data.name + " has " + data.public_repos + " public repositories!"); });
+```
+
+### A More Advanced Demo
 
 GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
 
@@ -64,12 +73,6 @@ GitHub's fenced code blocks are also supported with **Highlight.js** syntax high
         }
     </script>
 </body>
-```
-What Really Shows How Useful **api.js** can be is this demo:
-  Using a question on stackoverflow (http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript) asking for help using the github api the simple solution required 8 lines of code, mine required 2 and produces perfectly readable code.
-```
- getJSON('https://api.github.com/users/funchal', function myfunction(data) {
-            console.log(data.name + " has " + data.public_repos + " public repositories!"); });
 ```
 > **Tip:** To use **Prettify** instead of **Highlight.js**, just configure the **Markdown Extra** extension in the <i class="icon-cog"></i> **Settings** dialog.
 
