@@ -9,13 +9,13 @@ I designed **api-js** to save people time, and allow all developers to access th
 What is it? How does it work?
 -------------
 
-**api-js** provides you with a set of javascript functions to easily, and quickly use apis in your code.  **offline!**
+**api-js** provides you with a set of javascript functions to easily, and quickly use apis in your code.
 
 > **Note:**
 
-> - StackEdit is accessible offline after the application has been loaded for the first time.
-> - Your local documents are not shared between different browsers or computers.
-> - Clearing your browser's data may **delete all your local documents!** Make sure your documents are synchronized with **Google Drive** or **Dropbox** (check out the [<i class="icon-refresh"></i> Synchronization](#synchronization) section).
+> - **api-js** is still in development.
+> - Not All Planned Functions Have Been Implemented Yet. Please Check Here Lately for New Updates
+> - Currently Only Supports JSON apis.
 
 #### <i class="icon-file"></i> Create a document
 
