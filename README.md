@@ -2,17 +2,9 @@ Welcome to api-js.
 ===================
 
 
-Hey! I'm Josh. This is the github Repo for my latest project **api-js**. **Api-js** is a javascript library built for people who want to access apis without writing complex scripts for days.
+Hey! I'm Josh. This is the github repo for my latest project **api-js**. **Api-js** is a javascript library built for people who want to access apis without writing complex scripts for days.
 
 I designed **api-js** to save people time, and allow all developers to access the fantastic json apis out there. I first started building **api-js** for my own use whilst building a Reddit web application.
-
-----------
-
-### Table of contents
-
-You can insert a table of contents using the marker `[TOC]`:
-
-[TOC]
 
 Documentation
 -------------
