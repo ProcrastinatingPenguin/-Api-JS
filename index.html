@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script src="api.js"></script>
+
+</head>
+
+<body>
+    <script>
+        getJSON('http://api.reddit.com/r/aww/top', function (data) {
+            time = data;
+        }, function (status) {
+            alert('Something went wrong.');
+        });
+    </script>
+
+</body>
+
+</html>
