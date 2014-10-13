@@ -28,37 +28,110 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1>
+<a name="welcome-to-api-js" class="anchor" href="#welcome-to-api-js"><span class="octicon octicon-link"></span></a>Welcome to api-js.</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Hey! I'm Josh. This is the github repo for my latest project <strong>api-js</strong>. <strong>Api-js</strong> is a javascript library built for people who want to access apis without writing complex scripts for days.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>I designed <strong>api-js</strong> to save people time, and allow all developers to access the fantastic json apis out there. I first started building <strong>api-js</strong> for my own use whilst building a Reddit web application.</p>
+
+<h2>
+<a name="what-is-it-how-does-it-work" class="anchor" href="#what-is-it-how-does-it-work"><span class="octicon octicon-link"></span></a>What is it? How does it work?</h2>
+
+<p><strong>api-js</strong> provides you with a set of javascript functions to easily, and quickly use apis in your code.</p>
+
+<blockquote>
+<p><strong>Note:</strong></p>
+
+<ul>
+<li>
+<strong>api-js</strong> is still in development.</li>
+<li>Not All Planned Functions Have Been Implemented Yet. Please Check Here Lately for New Updates</li>
+<li>Currently Only Supports JSON apis.</li>
+</ul>
+</blockquote>
+
+<h3>
+<a name="the-code-explained" class="anchor" href="#the-code-explained"><span class="octicon octicon-link"></span></a>The Code Explained</h3>
+
+<h5>
+<a name="get-ting-json-apis-such-as-reddit-and-github" class="anchor" href="#get-ting-json-apis-such-as-reddit-and-github"><span class="octicon octicon-link"></span></a>GET-ting JSON Apis. (Such as Reddit and Github)</h5>
+
+<p>To get a basic JSON Api you use this syntax:</p>
+
+<pre><code>   getJSON(url, successfunction);
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Where URL is the URL of the Api (eg. <a href="http://api.reddit.com/r/aww/top">http://api.reddit.com/r/aww/top</a>)
+  And Where successfunction is the function to be called with the Returned JSON</p>
+
+<h4>
+<a name="-how-to-add-it-to-your-code" class="anchor" href="#-how-to-add-it-to-your-code"><span class="octicon octicon-link"></span></a>
+<i></i> How To Add it To Your Code?</h4>
+
+<pre><code>// Its Easy! Set Up a Normal HTML Document.
+&lt;html&gt;
+  &lt;head&gt;
+    // And Add:
+    &lt;script src = "api.js"&gt;&lt;/script&gt;
+    // Inside Your Header
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+</code></pre>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="a-extremely-basic-demo" class="anchor" href="#a-extremely-basic-demo"><span class="octicon octicon-link"></span></a>A Extremely Basic Demo</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>What Really Shows How Useful <strong>api.js</strong> can be is this demo:
+  Using a question on stackoverflow (<a href="http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript">http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript</a>) asking for help using the github api the complex solution required 8 lines of code, mine required 2 and produces perfectly readable code.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code> getJSON('https://api.github.com/users/funchal', function myfunction(data) {
+            console.log(data.name + " has " + data.public_repos + " public repositories!"); });
+</code></pre>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="a-more-advanced-demo" class="anchor" href="#a-more-advanced-demo"><span class="octicon octicon-link"></span></a>A More Advanced Demo</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>GitHub's fenced code blocks are also supported with <strong>Highlight.js</strong> syntax highlighting:</p>
+
+<pre><code>&lt;body&gt;
+    &lt;h1&gt; Demo A. &lt;/h1&gt;
+    &lt;div id="Container"&gt;&lt;/div&gt;
+    &lt;script&gt;
+        //Get JSON Function - Part of my API JS Library - Gets the JSON Data from the Reddit Api with the Current Top Posts In /r/aww.
+
+        getJSON('http://api.reddit.com/r/aww/top', success);
+                //URL                             //Function To Be Called With Response
+        function success(data) {
+            console.log("hi");
+            redditLinks = data;
+            redditPosts = redditLinks.data.children;
+
+            for (i = 0; i &lt; redditPosts.length; i++) {
+                Post = redditPosts[i].data;
+                document.getElementById("Container").innerHTML += "&lt;a href = '" + Post.url + "'&gt;" + Post.title + "&lt;/a&gt;&lt;br&gt;";
+            }
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<blockquote>
+<p><strong>Tip:</strong> To use <strong>Prettify</strong> instead of <strong>Highlight.js</strong>, just configure the <strong>Markdown Extra</strong> extension in the <i></i> <strong>Settings</strong> dialog.</p>
+
+<p><strong>Note:</strong> You can find more information:</p>
+
+<ul>
+<li>about <strong>Prettify</strong> syntax highlighting [here][5],</li>
+<li>about <strong>Highlight.js</strong> syntax highlighting [here][6].</li>
+</ul>
+</blockquote>
+
+<h3>
+<a name="support-my-library" class="anchor" href="#support-my-library"><span class="octicon octicon-link"></span></a>Support My Library</h3>
+
+<p>Please Support My Project By Using it!</p>
         </section>
 
         <aside id="sidebar">
