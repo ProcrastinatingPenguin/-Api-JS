@@ -23,8 +23,8 @@ What is it? How does it work?
   ```
    getJSON(url, successfunction);
    ```
-      Where URL is the URl of the Api (eg. http://api.reddit.com/r/aww/top)
-      And Where Succesfunction is the function to be called with the Returned JSON
+  Where URL is the URl of the Api (eg. http://api.reddit.com/r/aww/top)
+  And Where Succesfunction is the function to be called with the Returned JSON
 #### <i class="icon-file"></i> How To Add it To Your Code?
 
 ```
