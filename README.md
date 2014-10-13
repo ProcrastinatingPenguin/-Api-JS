@@ -17,6 +17,14 @@ What is it? How does it work?
 > - Not All Planned Functions Have Been Implemented Yet. Please Check Here Lately for New Updates
 > - Currently Only Supports JSON apis.
 
+#### The Code Explained
+##### GET-ting JSON Apis. (Such as Reddit and Github)
+  To get a basic JSON Api you use this syntax:
+  ```
+   getJSON(url, successfunction);
+   ```
+      Where URL is the URl of the Api (eg. http://api.reddit.com/r/aww/top)
+      And Where Succesfunction is the function to be called with the Returned JSON
 #### <i class="icon-file"></i> How To Add it To Your Code?
 
 ```
