@@ -31,15 +31,29 @@ What is it? How does it work?
     ...
 ```
 
-The document panel is accessible using the <i class="icon-folder-open"></i> button in the navigation bar. You can create a new document by clicking <i class="icon-file"></i> **New document** in the document panel.
-
-### Fenced code blocks
+### A Basic Demo
 
 GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
 
 ```
-// Foo
-var bar = 0;
+<body>
+    <h1> Demo A. </h1>
+    <div id="Container"></div>
+    <script>
+        getJSON('http://api.reddit.com/r/aww/top', success);
+
+        function success(data) {
+            console.log("hi");
+            redditLinks = data;
+            redditPosts = redditLinks.data.children;
+
+            for (i = 0; i < redditPosts.length; i++) {
+                Post = redditPosts[i].data;
+                document.getElementById("Container").innerHTML += "<a href = '" + Post.url + "'>" + Post.title + "</a><br>";
+            }
+        }
+    </script>
+</body>
 ```
 
 > **Tip:** To use **Prettify** instead of **Highlight.js**, just configure the **Markdown Extra** extension in the <i class="icon-cog"></i> **Settings** dialog.
