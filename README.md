@@ -71,7 +71,7 @@ What Really Shows How Useful **api.js** can be is this demo:
 > - about **Highlight.js** syntax highlighting [here][6].
 
 
-### Support StackEdit
+### Support My Library
 
-Please Support my Project By Using it!
+Please Support My Project By Using it!
 
