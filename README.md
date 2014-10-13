@@ -9,7 +9,7 @@ I designed **api-js** to save people time, and allow all developers to access th
 What is it? How does it work?
 -------------
 
-StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
+**api-js** provides you with a set of javascript functions to easily, and quickly use apis in your code.  **offline!**
 
 > **Note:**
 
