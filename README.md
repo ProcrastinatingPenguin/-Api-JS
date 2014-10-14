@@ -32,8 +32,14 @@ The **getJSON** function
   ```
    getJSON(url, successfunction);
    ```
-  Where URL is the URL of the Api (eg. http://api.reddit.com/r/aww/top)
-  And Where successfunction is the function to be called with the Returned JSON
+  
+> ## What Are The Parameters?
+
+> URL - The URL you wish to get the JSON from.
+
+> - eg. **http://api.reddit.com/r/funny/top** Is the URL for the top posts in r/funny
+> - eg **http://api.reddit.com/r/funny/top?limit=10** Is the URL for the top 10 posts in r/funny.
+
 
 #### A Extremely Basic Demo
 
