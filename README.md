@@ -57,19 +57,17 @@ What Really Shows How Useful **api.js** can be is this demo:
 
 #### A More Advanced Demo
 
-GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
+The code below when executed collects the top posts in /r/aww then executes the function I declaired called **success**.
+The **success** function then sorts out an array of the posts from the json data. The function then goes through the posts one by one writing to an element called container a link to the image and the caption.
 
 ```
 <body>
     <h1> Demo A. </h1>
     <div id="Container"></div>
     <script>
-        //Get JSON Function - Part of my API JS Library - Gets the JSON Data from the Reddit Api with the Current Top Posts In /r/aww.
-
         getJSON('http://api.reddit.com/r/aww/top', success);
-                //URL                             //Function To Be Called With Response
+        
         function success(data) {
-            console.log("hi");
             redditLinks = data;
             redditPosts = redditLinks.data.children;
 
