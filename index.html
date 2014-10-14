@@ -1,42 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <title>-api-js by JoshuaPage</title>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>-api-js by JoshuaPage</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
+    <div class="wrapper">
+      <header>
         <h1>-api-js</h1>
-        <h2></h2>
-        <a href="https://github.com/JoshuaPage/-Api-JS" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+        <p></p>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
+        <p class="view"><a href="https://github.com/JoshuaPage/-Api-JS">View the Project on GitHub <small>JoshuaPage/-Api-JS</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/JoshuaPage/-Api-JS/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/JoshuaPage/-Api-JS/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/JoshuaPage/-Api-JS">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
 <a name="welcome-to-api-js" class="anchor" href="#welcome-to-api-js"><span class="octicon octicon-link"></span></a>Welcome to api-js.</h1>
 
 <p>Hey! I'm Josh. This is the github repo for my latest project <strong>api-js</strong>. <strong>Api-js</strong> is a javascript library built for people who want to access apis without writing complex scripts for days.</p>
 
 <p>I designed <strong>api-js</strong> to save people time, and allow all developers to access the fantastic json apis out there. I first started building <strong>api-js</strong> for my own use whilst building a Reddit web application.</p>
 
-<h2>
-<a name="what-is-it-how-does-it-work" class="anchor" href="#what-is-it-how-does-it-work"><span class="octicon octicon-link"></span></a>What is it? How does it work?</h2>
+<p><strong>api-js</strong> allows Javascript Novices (and Javascript Ninjas) who wish to save time writing Api Calls to use a simple function to do everything they need.</p>
+
+<p>Using <strong>api-js</strong> you can quickly write, in pure javascript, api calls which normally would require most users to use PHP and Python. This has two benifits:
+    1. It Saves You Time! - You can implement this function in 10 seconds whilst writing a script in PHP and Python could take hours.
+    2. It helps your server! - <strong>api-js</strong> does all the work client-side, this means your server does much less work than had you used PHP or Python.</p>
+
+<h4>
+<a name="what-is-it-how-does-it-work" class="anchor" href="#what-is-it-how-does-it-work"><span class="octicon octicon-link"></span></a>What is it? How does it work?</h4>
+
+<hr>
 
 <p><strong>api-js</strong> provides you with a set of javascript functions to easily, and quickly use apis in your code.</p>
 
@@ -51,37 +59,50 @@
 </ul>
 </blockquote>
 
-<h3>
-<a name="the-code-explained" class="anchor" href="#the-code-explained"><span class="octicon octicon-link"></span></a>The Code Explained</h3>
+<h4>
+<a name="how-to-add-it-to-your-code" class="anchor" href="#how-to-add-it-to-your-code"><span class="octicon octicon-link"></span></a>How To Add it To Your Code?</h4>
+
+<hr>
+
+<p>Its Easy! Set Up a Normal HTML Document and Add:</p>
+
+<pre><code>    &lt;script src = "api.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Inside Your Header</p>
+
+<h2>
+<a name="the-getjson-function" class="anchor" href="#the-getjson-function"><span class="octicon octicon-link"></span></a>The <strong>getJSON</strong> function</h2>
 
 <h5>
-<a name="get-ting-json-apis-such-as-reddit-and-github" class="anchor" href="#get-ting-json-apis-such-as-reddit-and-github"><span class="octicon octicon-link"></span></a>GET-ting JSON Apis. (Such as Reddit and Github)</h5>
+<a name="used-for-get-ting-json-apis-such-as-reddit-and-github" class="anchor" href="#used-for-get-ting-json-apis-such-as-reddit-and-github"><span class="octicon octicon-link"></span></a>Used For GET-ting JSON Apis. (Such as Reddit and Github)</h5>
 
 <p>To get a basic JSON Api you use this syntax:</p>
 
 <pre><code>   getJSON(url, successfunction);
 </code></pre>
 
-<p>Where URL is the URL of the Api (eg. <a href="http://api.reddit.com/r/aww/top">http://api.reddit.com/r/aww/top</a>)
-  And Where successfunction is the function to be called with the Returned JSON</p>
+<blockquote>
+<h5>
+<a name="what-are-the-parameters" class="anchor" href="#what-are-the-parameters"><span class="octicon octicon-link"></span></a>What Are The Parameters?</h5>
+
+<p><strong>URL</strong> - The URL you wish to get the JSON from.</p>
+
+<ul>
+<li>eg. <strong><a href="http://api.reddit.com/r/funny/top">http://api.reddit.com/r/funny/top</a></strong> Is the URL for the top posts in r/funny</li>
+<li>eg <strong><a href="http://api.reddit.com/r/funny/top?limit=10">http://api.reddit.com/r/funny/top?limit=10</a></strong> Is the URL for the top 10 posts in r/funny.</li>
+</ul>
+
+<p><strong>Successfunction</strong> - The function to be called when the data is returned.</p>
+
+<ul>
+<li>eg. <strong>getJSON(url, function(data){console.log(data)})</strong> Logs the returned data in the console</li>
+<li>eg  <strong>getJSON(url, myfunction)</strong> Executes a function you declair called myfunction.</li>
+</ul>
+</blockquote>
 
 <h4>
-<a name="-how-to-add-it-to-your-code" class="anchor" href="#-how-to-add-it-to-your-code"><span class="octicon octicon-link"></span></a>
-<i></i> How To Add it To Your Code?</h4>
-
-<pre><code>// Its Easy! Set Up a Normal HTML Document.
-&lt;html&gt;
-  &lt;head&gt;
-    // And Add:
-    &lt;script src = "api.js"&gt;&lt;/script&gt;
-    // Inside Your Header
-  &lt;/head&gt;
-  &lt;body&gt;
-    ...
-</code></pre>
-
-<h3>
-<a name="a-extremely-basic-demo" class="anchor" href="#a-extremely-basic-demo"><span class="octicon octicon-link"></span></a>A Extremely Basic Demo</h3>
+<a name="a-extremely-basic-demo" class="anchor" href="#a-extremely-basic-demo"><span class="octicon octicon-link"></span></a>A Extremely Basic Demo</h4>
 
 <p>What Really Shows How Useful <strong>api.js</strong> can be is this demo:
   Using a question on stackoverflow (<a href="http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript">http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript</a>) asking for help using the github api the complex solution required 8 lines of code, mine required 2 and produces perfectly readable code.</p>
@@ -90,23 +111,20 @@
             console.log(data.name + " has " + data.public_repos + " public repositories!"); });
 </code></pre>
 
-<h3>
-<a name="a-more-advanced-demo" class="anchor" href="#a-more-advanced-demo"><span class="octicon octicon-link"></span></a>A More Advanced Demo</h3>
+<h4>
+<a name="a-more-advanced-demo" class="anchor" href="#a-more-advanced-demo"><span class="octicon octicon-link"></span></a>A More Advanced Demo</h4>
 
-<p>GitHub's fenced code blocks are also supported with <strong>Highlight.js</strong> syntax highlighting:</p>
+<p>The code below when executed collects the top posts in /r/aww then executes the function I declaired called <strong>success</strong>.
+The <strong>success</strong> function then sorts out an array of the posts from the json data. The function then goes through the posts one by one writing to an element called container a link to the image and the caption.</p>
 
 <pre><code>&lt;body&gt;
     &lt;h1&gt; Demo A. &lt;/h1&gt;
     &lt;div id="Container"&gt;&lt;/div&gt;
     &lt;script&gt;
-        //Get JSON Function - Part of my API JS Library - Gets the JSON Data from the Reddit Api with the Current Top Posts In /r/aww.
-
         getJSON('http://api.reddit.com/r/aww/top', success);
-                //URL                             //Function To Be Called With Response
+
         function success(data) {
-            console.log("hi");
-            redditLinks = data;
-            redditPosts = redditLinks.data.children;
+            redditPosts = data.data.children;
 
             for (i = 0; i &lt; redditPosts.length; i++) {
                 Post = redditPosts[i].data;
@@ -118,39 +136,20 @@
 </code></pre>
 
 <blockquote>
-<p><strong>Tip:</strong> To use <strong>Prettify</strong> instead of <strong>Highlight.js</strong>, just configure the <strong>Markdown Extra</strong> extension in the <i></i> <strong>Settings</strong> dialog.</p>
-
-<p><strong>Note:</strong> You can find more information:</p>
-
-<ul>
-<li>about <strong>Prettify</strong> syntax highlighting [here][5],</li>
-<li>about <strong>Highlight.js</strong> syntax highlighting [here][6].</li>
-</ul>
+<p><strong>Note:</strong> Previously before using api.js to write out the exact same data required 24 lines. Using api.js it required 8 lines of javascript.</p>
 </blockquote>
 
 <h3>
 <a name="support-my-library" class="anchor" href="#support-my-library"><span class="octicon octicon-link"></span></a>Support My Library</h3>
 
 <p>Please Support My Project By Using it!</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/JoshuaPage/-Api-JS/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/JoshuaPage/-Api-JS/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/JoshuaPage/-Api-JS"></a> is maintained by <a href="https://github.com/JoshuaPage">JoshuaPage</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/JoshuaPage">JoshuaPage</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-  
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
