@@ -19,22 +19,15 @@ What is it? How does it work?
 
 How To Add it To Your Code?
 -------------
-
+Its Easy! Set Up a Normal HTML Document and Add:
 ```
-// Its Easy! Set Up a Normal HTML Document.
-<html>
-  <head>
-    // And Add:
     <script src = "api.js"></script>
-    // Inside Your Header
-  </head>
-  <body>
-    ...
 ```
+Inside Your Header
 
-
-### The Code Explained
-##### GET-ting JSON Apis. (Such as Reddit and Github)
+The **getJSON** function
+-------------
+##### USEd For GET-ting JSON Apis. (Such as Reddit and Github)
   To get a basic JSON Api you use this syntax:
   ```
    getJSON(url, successfunction);
