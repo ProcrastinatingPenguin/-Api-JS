@@ -12,7 +12,7 @@ Using **api-js** you can quickly write, in pure javascript, api calls which norm
     1. It Saves You Time! - You can implement this function in 10 seconds whilst writing a script in PHP and Python could take hours.
     2. It helps your server! - **api-js** does all the work client-side, this means your server does much less work than had you used PHP or Python.
 
-###What is it? How does it work?
+####What is it? How does it work?
 -------------
 
 **api-js** provides you with a set of javascript functions to easily, and quickly use apis in your code.
@@ -23,7 +23,7 @@ Using **api-js** you can quickly write, in pure javascript, api calls which norm
 > - Not All Planned Functions Have Been Implemented Yet. Please Check Here Lately for New Updates
 > - Currently Only Supports JSON apis.
 
-How To Add it To Your Code?
+####How To Add it To Your Code?
 -------------
 Its Easy! Set Up a Normal HTML Document and Add:
 ```
