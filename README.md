@@ -68,8 +68,7 @@ The **success** function then sorts out an array of the posts from the json data
         getJSON('http://api.reddit.com/r/aww/top', success);
         
         function success(data) {
-            redditLinks = data;
-            redditPosts = redditLinks.data.children;
+            redditPosts = data.data.children;
 
             for (i = 0; i < redditPosts.length; i++) {
                 Post = redditPosts[i].data;
@@ -79,13 +78,7 @@ The **success** function then sorts out an array of the posts from the json data
     </script>
 </body>
 ```
-> **Tip:** To use **Prettify** instead of **Highlight.js**, just configure the **Markdown Extra** extension in the <i class="icon-cog"></i> **Settings** dialog.
-
-> **Note:** You can find more information:
-
-> - about **Prettify** syntax highlighting [here][5],
-> - about **Highlight.js** syntax highlighting [here][6].
-
+> **Note:** Previously before using api.js to write out the exact same data required 24 lines. Using api.js it required 8 lines of javascript.
 
 ### Support My Library
 
