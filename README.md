@@ -32,6 +32,7 @@ How To Add it To Your Code?
     ...
 ```
 
+
 ### The Code Explained
 ##### GET-ting JSON Apis. (Such as Reddit and Github)
   To get a basic JSON Api you use this syntax:
