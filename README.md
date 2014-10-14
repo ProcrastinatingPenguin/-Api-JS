@@ -33,12 +33,17 @@ The **getJSON** function
    getJSON(url, successfunction);
    ```
   
-> ## What Are The Parameters?
+> ##### What Are The Parameters?
 
 > URL - The URL you wish to get the JSON from.
 
 > - eg. **http://api.reddit.com/r/funny/top** Is the URL for the top posts in r/funny
 > - eg **http://api.reddit.com/r/funny/top?limit=10** Is the URL for the top 10 posts in r/funny.
+
+> Successfunction - The function to be called when the data is returned.
+
+> - eg. **getJSON(url, function(data){console.log(data)})** Logs the returned data in the console
+> - eg  **getJSON(url, myfunction)** Executes a function you declair called myfunction.
 
 
 #### A Extremely Basic Demo
