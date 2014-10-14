@@ -27,7 +27,7 @@ Inside Your Header
 
 The **getJSON** function
 -------------
-##### USEd For GET-ting JSON Apis. (Such as Reddit and Github)
+##### Used For GET-ting JSON Apis. (Such as Reddit and Github)
   To get a basic JSON Api you use this syntax:
   ```
    getJSON(url, successfunction);
@@ -35,7 +35,7 @@ The **getJSON** function
   Where URL is the URL of the Api (eg. http://api.reddit.com/r/aww/top)
   And Where successfunction is the function to be called with the Returned JSON
 
-### A Extremely Basic Demo
+#### A Extremely Basic Demo
 
 What Really Shows How Useful **api.js** can be is this demo:
   Using a question on stackoverflow (http://stackoverflow.com/questions/10341135/example-of-using-github-api-from-javascript) asking for help using the github api the complex solution required 8 lines of code, mine required 2 and produces perfectly readable code.
@@ -44,7 +44,7 @@ What Really Shows How Useful **api.js** can be is this demo:
             console.log(data.name + " has " + data.public_repos + " public repositories!"); });
 ```
 
-### A More Advanced Demo
+#### A More Advanced Demo
 
 GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
 
