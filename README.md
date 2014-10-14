@@ -6,6 +6,12 @@ Hey! I'm Josh. This is the github repo for my latest project **api-js**. **Api-j
 
 I designed **api-js** to save people time, and allow all developers to access the fantastic json apis out there. I first started building **api-js** for my own use whilst building a Reddit web application.
 
+**api-js** allows Javascript Novices (and Javascript Ninjas) who wish to save time writing Api Calls to use a simple function to do everything they need.
+
+Using **api-js** you can quickly write, in pure javascript, api calls which normally would require most users to use PHP and Python. This has two benifits:
+    1. It Saves You Time! - You can implement this function in 10 seconds whilst writing a script in PHP and Python could take hours.
+    2. It helps your server! - **api-js** does all the work client-side, this means your server does much less work than had you used PHP or Python.
+
 What is it? How does it work?
 -------------
 
