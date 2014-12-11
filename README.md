@@ -8,8 +8,8 @@ I designed **api-js** to save people time, and allow all developers to access th
 
 **api-js** allows Javascript Novices (and Javascript Ninjas) who wish to save time writing Api Calls to use a simple function to do everything they need.
 
-Using **api-js** you can quickly write, in pure javascript, api calls which normally would require most users to use PHP and Python. This has two benifits:
-    1. It Saves You Time! - You can implement this function in 10 seconds whilst writing a script in PHP and Python could take hours.
+Using **api-js** you can quickly write in pure javascript, api calls which normally would require most users to use PHP and Python. This has two benifits:
+    1. It saves you time! - You can implement this function in 10 seconds whilst writing a script in PHP and Python could take hours.
     2. It helps your server! - **api-js** does all the work client-side, this means your server does much less work than had you used PHP or Python.
 
 ####What is it? How does it work?
@@ -63,7 +63,7 @@ What Really Shows How Useful **api.js** can be is this demo:
 
 #### A More Advanced Demo
 
-The code below when executed collects the top posts in /r/aww then executes the function I declaired called **success**.
+The code below when executed collects the top posts in /r/aww then executes the function I declared called **success**.
 The **success** function then sorts out an array of the posts from the json data. The function then goes through the posts one by one writing to an element called container a link to the image and the caption.
 
 ```
@@ -84,11 +84,11 @@ The **success** function then sorts out an array of the posts from the json data
     </script>
 </body>
 ```
-> **Note:** Previously before using api.js to write out the exact same data required 24 lines. Using api.js it required 8 lines of javascript.
+> **Note:** Previously before using api.js to write out the exact same data required 24 lines. Using api.js it required 8 lines of javascript!
 
 ### Support My Library
 
-Please Support My Project By Using it!
+Please support my Project by using it!
 
 ===================
 What are you waiting for? **Download It Now...**
